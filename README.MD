@@ -1,7 +1,12 @@
-# Zotero Libt To Notion
-将 Zotero Library 同步至 Notion 文献库
+# Zotero-Notion
+Sync Zotero library to Notion and cite them.  
+## Showcase
+- Cite an item:
+![](https://i.imgur.com/LnMNtxJ.png)
+- Database (*A.K.A. collection*):
+![](https://i.imgur.com/dUfrtmR.png)
 
-## 配置项一览
+## Necessary Configuration
 ```
 [notion]
 PAGE_URL = Target Notion Page Address
@@ -14,5 +19,19 @@ LIBRARY_TYPE = Type of Target Zotero Library, user or group
 API_KEY= Zotero API Key
 ```
 
-`TOKEN_V2` 获取  
-`API_KEY` 获取
+- Find Notion [`TOKEN_V2`](https://www.google.com/search?q=get+notion+tokenv2)  
+- Get Zotero [`API_KEY`](https://www.zotero.org/settings/keys)
+
+## Requirements
+- Python >= 3.7
+- Pyzotero
+- notion_py (**ATTENTION: only use [this fork version](https://github.com/arturtamborski/notion-py), plz**)
+- pandas
+- notion
+- rich
+
+## Run 
+`python3 main.py`
+
+## Todo
+- Robustness improvements
