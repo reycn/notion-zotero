@@ -1,4 +1,7 @@
 # Zotero-Notion
+
+![GitHub top language](https://img.shields.io/github/languages/top/reycn/notion-zotero)
+![License](https://img.shields.io/badge/license-MIT-000000.svg)  
 Sync Zotero library to Notion and cite them.  
 ## Showcase
 - Cite an item:
