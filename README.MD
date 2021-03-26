@@ -2,7 +2,7 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/reycn/notion-zotero)
 ![License](https://img.shields.io/badge/license-MIT-000000.svg)  
-Sync Zotero library to Notion and cite them.  
+Sync Zotero library with Notion。
 ## Showcase
 - Cite an item:
 ![](https://i.imgur.com/LnMNtxJ.png)
