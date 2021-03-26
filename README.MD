@@ -2,7 +2,8 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/reycn/notion-zotero)
 ![License](https://img.shields.io/badge/license-MIT-000000.svg)  
-Sync Zotero library with Notion。
+Create a Notion collection, synced with Zotero.
+
 ## Showcase
 - Cite an item:
 ![](https://i.imgur.com/LnMNtxJ.png)
