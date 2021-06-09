@@ -1,5 +1,4 @@
 Pyzotero==1.4.20
-notion_py==0.0.7
+notion_py==0.0.9
 pandas==1.2.1
-notion==0.0.28
 rich==9.10.0

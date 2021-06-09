@@ -14,17 +14,15 @@ CLIENT, PAGE, CV = None, None, None
 
 
 try:
-    cfg = ConfigParser()
-    cfg.read(syspath[0] + '/config.ini')
-    PAGE_URL = cfg.get('notion', 'PAGE_URL')
-    CV_URL = cfg.get('notion', 'CV_URL')
-    TOKEN_V2 = cfg.get('notion', 'TOKEN_V2')
-    LIBRARY_ID = int(cfg.get('zotero', 'LIBRARY_ID'))
-    LIBRARY_TYPE = cfg.get('zotero', 'LIBRARY_TYPE')
-    API_KEY = cfg.get('zotero', 'API_KEY')
+    PAGE_URL = sys.argv[1]
+    CV_URL = sys.argv[2]
+    TOKEN_V2 = sys.argv[3]
+    LIBRARY_ID = int(sys.argv[4])
+    LIBRARY_TYPE = sys.argv[5]
+    API_KEY = sys.argv[6]
 
 except Exception as e:
-    CONSOLE.print('Config file error, exit...', style='bold red')
+    CONSOLE.print('No arguments detected, exit...', style='bold red')
     exit()
 
 ## DEFINE FUNCTIONS ################################################################################
