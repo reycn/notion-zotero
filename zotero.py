@@ -23,9 +23,7 @@ def extrtact_data(df: pd.DataFrame) -> pd.DataFrame:
     # df = df[df['itemType'] != 'attachment'].copy()
     df['authors'] = [ creators_to_names(i) for i in df.creators]
     df['year'] = df.date.apply( lambda x: re.search(r'([0-9]{4})', str(x)).group(1) if re.search(r'([0-9]{4})', str(x)) else '*' )
-    df['author_year'] = df.authors.apply(lambda x: ', '.join(x) if len(x) <= 2 else ', '.join(x[:2]) + ' ...')
-    df['author_year'] = '(' + df['author_year']  + ', ' +  df['year']  + ')'
-    data = df[df['itemType'] != 'attachment'][['author_year', 'title', 'authors', 'year', 'itemType', 'key', 'version']].T.to_dict()
+    data = df[df['itemType'] != 'attachment'][['title', 'authors', 'year', 'url', 'key', 'version']].T.to_dict()
     return data
 
 def fetch_zotero_items(LIBRARY_ID: int, LIBRARY_TYPE: str, API_KEY: str) -> pd.DataFrame:
