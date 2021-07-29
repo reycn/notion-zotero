@@ -1,8 +1,8 @@
 # Zotero-Notion
 
 ![GitHub top language](https://img.shields.io/github/languages/top/reycn/notion-zotero)
-![License](https://img.shields.io/badge/license-MIT-000000.svg)  
-[![zotero-to-notion](https://github.com/magicgh/zotero-notion/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/magicgh/zotero-notion/actions/workflows/main.yml)
+![License](https://img.shields.io/badge/license-MIT-000000.svg)
+[![zotero-to-notion](https://github.com/magicgh/zotero-notion/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/magicgh/zotero-notion/actions/workflows/main.yml)  
 Create a Notion collection, synced with Zotero **automatically by GitHub Actions**.
 
 ## Get Started
