@@ -1,0 +1,36 @@
+name: "zotero-to-notion"
+
+on:
+  push:
+    branches:
+      - main
+
+  schedule:
+    - cron: "0 0,7 * * 3,6"
+
+  
+
+jobs:
+  sync:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' 
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run
+        env:
+          page: ${{secrets.PAGE_URL}}
+          cv: ${{secrets.CV_URL}}
+          token: ${{secrets.TOKEN_V2}}
+          id: ${{secrets.LIBRARY_ID}}
+          type: ${{secrets.LIBRARY_TYPE}}
+          key: ${{secrets.API_KEY}}
+
+        run: python main.py ${page} ${cv} ${token} ${id} ${type} ${key}
+      
